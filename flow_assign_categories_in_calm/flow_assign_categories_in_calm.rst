@@ -1,8 +1,8 @@
 .. _flow_assign_categories_in_calm:
 
---------------------------------------------------------
-Flow: Assign Categories inside Calm Blueprint (Optional)
---------------------------------------------------------
+---------------------------------------------
+Flow: Assign Categories inside Calm Blueprint
+---------------------------------------------
 
 *The estimated time to complete this lab is 10 minutes.*
 

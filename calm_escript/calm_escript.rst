@@ -1,8 +1,8 @@
 *Script Provided Below*.. _calm_escript:
 
------------------------------------------
-Calm: EScript and Task Library (Optional)
------------------------------------------
+------------------------------
+Calm: EScript and Task Library
+------------------------------
 
 Overview
 ++++++++

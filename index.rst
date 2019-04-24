@@ -18,6 +18,7 @@
   :hidden:
 
   what_is_calm/what_is_calm
+  calm_sshkey_creation/calm_sshkey_creation
   calm_basics/basics
   calm_enable/calm_enable
   calm_projects/calm_projects
@@ -29,7 +30,6 @@
   :name: _main_calm_labs
   :hidden:
 
-  calm_sshkey_creation/calm_sshkey_creation
   calm_singlevm_blueprint/calm_singlevm_blueprint
   calm_mysql_blueprint/calm_mysql_blueprint
   calm_linux/calm_linux
@@ -73,10 +73,10 @@
 .. _getting_started:
 
 -------------
-Calm Bootcamp
+Calm Workshop
 -------------
 
-Welcome to the Calm Bootcamp! This workbook accompanies an instructor-led session that introduces Nutanix Calm and many common management tasks. Each section has a lesson and an exercise to give you hands-on practice. The instructor explains the exercises and answers any additional questions that you may have.
+Welcome to the Calm Workshop! This workbook accompanies an instructor-led session that introduces Nutanix Calm and many common management tasks. Each section has a lesson and an exercise to give you hands-on practice. The instructor explains the exercises and answers any additional questions that you may have.
 
 At the end of the bootcamp, attendees should understand the basic concepts and technologies that make up Nutanix Calm and should be well prepared to install, design and operate Calm blueprints and applications.
 
