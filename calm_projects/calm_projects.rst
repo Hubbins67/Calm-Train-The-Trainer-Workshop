@@ -4,60 +4,65 @@
 Calm: Projects
 ------------
 
+Overview
+++++++++
+
+.. note::
+
+  Review :ref:`calm_basics` before proceeding with the lab to familiarize yourself with the UI and common terminology used in Nutanix Calm.
+
+  Estimated time to complete: **15 MINUTES**
+
+In this exercise you will configure a Project to contain your Blueprints and Applications created throughout the Bootcamp.
+
 Creating A Project
 ++++++++++++++++++
 
-Open \https://*<Prism-Central-IP>*:9440/ in a browser and log in.
-
-From the navigation bar, click ( |menu-icon| top left corner) **Menu** > **Services** > **Calm** (if you're running PC <5.10, then select **Calm** on top navigation bar)
-
 Projects are the logical construct that integrate Calm with Nutanix's native Self-Service Portal (SSP) capabilities, allowing an administrator to assign both infrastructure resources and the roles/permissions of Active Directory users/groups to specific Blueprints and Applications.
 
-Select |proj-icon| **Projects** from the sidebar.
+#. Within the Calm UI, Select |proj-icon| **Projects** from the sidebar.
 
-.. figure:: images/510enable8.png
+.. figure:: images/510projects1.png
 
-Click **+ Create Project**
+#. Click + Create Project
 
-Fill out the following fields:
+#. Fill out the following fields:
 
-- **Project Name** - Calm-*initials*
-- **Description** - Calm-*initials*
+- **Project Name** - *initials*-Calm
+- **Description** - *initials*-Calm
 
-Under **Users, Groups, and Roles**, click **+ User**.
+#. Under **Users, Groups, and Roles**, click **+ User**.
 
-.. note:: If workshop is being run on a local Nutanix cluster the user names used may be different than listed below.
-
-Fill out the following fields and click **Save**:
+#. Fill out the following fields and click **Save**:
 
 - **Name** - SSP Admins
 - **Role** - Project Admin
 
-Click **+ User**, fill out the following fields and click **Save**:
+#. Click **+ User**, fill out the following fields and click **Save**:
 
 - **Name** - SSP Developers
 - **Role** - Developer
 
-Click **+ User**, fill out the following fields and click **Save**:
+#. Click **+ User**, fill out the following fields and click **Save**:
 
 - **Name** - SSP Power Users
 - **Role** - Consumer
 
-Click **+ User**, fill out the following fields and click **Save**:
+#. Click **+ User**, fill out the following fields and click **Save**:
 
 - **Name** - SSP Basic Users
 - **Role** - Operator
 
-Under **Infrastructure**, fill out the following fields:
+#. Under **Infrastructure**, fill out the following fields:
+
 - **Select which resources you want this project to consume** - Local only
 - **AHV Cluster** - *<Cluster Name>*
 
-Under **Network**, select the **Primary** and if available, the **Secondary** networks. Select :fa:`star` for the **Primary** network to make it the default virtual network for VMs in the **Calm** project.
+#. Under **Network**, select the **Primary** and if available, the **Secondary** networks. Select :fa:`star` for the **Primary** network to make it the default virtual network for VMs in the **Calm** project.
 
-Click **Save**.
+#. Click **Save**.
 
-.. figure:: images/enable7.png
-    :scale: 75 %
+.. figure:: images/510projects2.png
 
 .. note::
 
@@ -73,4 +78,3 @@ Takeaways
 .. |mktmgr-icon| image:: ../images/marketplacemanager_icon.png
 .. |mkt-icon| image:: ../images/marketplace_icon.png
 .. |bp-icon| image:: ../images/blueprints_icon.png
-.. |menu-icon| image:: ../images/menu_icon.png

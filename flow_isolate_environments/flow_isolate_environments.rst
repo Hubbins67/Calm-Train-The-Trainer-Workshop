@@ -4,102 +4,94 @@
 Flow: Isolate Environments
 --------------------------
 
+*The estimated time to complete this lab is 30 minutes.*
+
 Overview
 ++++++++
 
-.. note::
+In this exercise you will create a new environment category and assign this to the Task Manager application. Then you will create and implement an isolation security policy that uses the newly created category in order to restrict unauthorized access.
 
-  Estimated time to complete: 15-30 MINUTES
+Isolating Environments
+++++++++++++++++++++++
 
-In this exercise you will create a category with different values. Then you will create and implement an isolation security policy that uses the newly created category in order to restrict unauthorized access.
+Isolation policies are used when one group of VMs must be completely blocked from communicating with another group of VMs without any whitelist exceptions. A common example is using isolation policies to block VMs tagged **Environment: Dev** from talking to VMs in **Environment: Production**. Do not use isolation policies if you want to create exceptions between the two groups, instead use an Application Policy which allows a whitelist model.
 
-Isolate Environments with Flow
-++++++++++++++++++++++++++++++
+In this exercise you will create a new environment category and assign this to the Task Manager application. Then you will create and implement an isolation security policy that uses the newly created category in order to restrict unauthorized access.
 
-Create a New Category
-.....................
+Creating and Assigning Categories
+.................................
 
-Log on to the Prism Central environment and navigate to **Explore > Categories**.
+#. In **Prism Central**, select :fa:`bars` **> Virtual Infrastructure > Categories**.
 
-.. note::
-  There should be default categories present. Now you will create a custom category to add to the list as well.
+#. Select the checkbox for **Environment** and click **Actions > Update**.
 
-Click **New Category**.
+#. Click the :fa:`plus-circle` icon beside the last value to add an additional Category value.
 
-Fill out the following fields and click **Save**:
+#. Specify *Initials*-**Prod** as the value name.
 
-- **Name** - Programs-abc, replacing abc with your initials.
-- **Purpose** - This category will be used to tag VMs belonging to the program called "Programs-abc", as an example. This category will have "intern" and "sales" values in order to differentiate intern and sales VMs within the **programs-abc** category.
-- **Values** - interns-abc.
-- **Values** - sales-abc.
+   .. figure:: images/37.png
 
-.. figure:: images/create_category.png
+#. Click **Save**.
 
-Create a New Security Policy
+#. In **Prism Central**, select :fa:`bars` **> Virtual Infrastructure > VMs**.
+
+#. Click **Filters** and search for *Initials-* to display your virtual machines.
+
+   .. note::
+
+     If you previously created a Label for your application VMs you can also search for that label. Alternatively you can search for the **AppType:** *Initials*-**TaskMan** category from the Filters pane.
+
+     .. figure:: images/38.png
+
+#. Using the checkboxes, select the 4 VMs associated with the application (HAProxy, MYSQL, WebServer-0, WebServer-1) and select **Actions > Manage Categories**.
+
+#. Specify **Environment:**\ *Initials*-**Prod** in the search bar and click **Save** icon to bulk assign the category to all 4 VMs.
+
+   .. figure:: images/39.png
+
+Creating an Isolation Policy
 ............................
 
-Navigate to **Explore > Security Policies** within Prism Central.
+#. In **Prism Central**, select :fa:`bars` **> Virtual Infrastructure > Policies > Security Policies**.
 
-Click **Create Security Policy** > Select **Isolate Environments**.
+#. Click **Create Security Policy > Isolate Environments**.
 
-Fill out the following fields:
+#. Fill out the following fields:
 
-- **Name** - isolate-interns-sales-abc, replacing abc with your initials.
-- **Purpose** - Isolate intern vm traffic from sales.
-- **Isolate This Category** - programs-abc:interns-abc.
-- **From This Category** - programs-abc:sales-abc.
-Do NOT select the check box for **Apply the isolation only within a subset of the data center**.
+   - **Name** - *Initials*-Isolate-dev-prod
+   - **Purpose** - *Initials* - Isolate dev from prod
+   - **Isolate This Category** - Environment:Dev
+   - **From This Category** - Environment:*Initials*-Prod
+   - Do **NOT** select **Apply this isolation only within a subset of the datacenter**. This option provides additional granularity by only applying to VMs assigned a third, mutual category.
 
-•	Enter interns-abc as a possible value of this category, replacing abc with your initials.
-•	Click the plus sign and enter sales-abc as another value in this category, replacing abc with your initials.
-• Click **Apply Now** to save and apply the policy.
+   .. figure:: images/40.png
 
-.. note::
-  The Save and Monitor button allows you to save the configuration and monitor how the security policy works without applying it.
+#. Click **Apply Now** to save the policy and begin enforcement immediately.
 
-.. figure:: images/create_isol_pol.png
+#. Return to the *Initials*\ **-WinClient-0** console.
 
-Apply the New Security Policy
-.............................
+   Is the Task Manager application accessible? Why not?
 
-Confirm communication is possible before applying the categories to the VMs
----------------------------------------------------------------------------
+   Using these simple policies it is possible to block traffic between groups of VMs such as production and development, to isolate a lab system, or provide isolation for compliance.
 
-Navigate to **Explore > VMs**.
+Deleting a Policy
+.................
 
-Open the VM console of **flow-abc-3** and **flow-abc-4** by selecting one VM at a time then clicking on the checkbox next to it.
+#. In **Prism Central**, select :fa:`bars` **> Virtual Infrastructure > Policies > Security Policies**.
 
-Click **Actions > Launch Console**.
+#. Select *Initials*-**Isolate-dev-prod** and click **Actions > Delete**.
 
-Log into both VMs and find the ips of the VMs via the command *ifconfig*. Ping from the **flow-abc-3** VM to the **flow-abc-4** VM.
+#. Type **DELETE** in the confirmation dialogue and click **OK** to disable the policy.
 
-.. note::
-  The pings should succeed because these two VMs do not yet have categories assigned.
+   .. note::
 
-Assign a category to the VMs flow-abc-3 and flow-abc-4
--------------------------------------------------------
-Navigate to **Explore > VMs**.
+     To disable the policy you can choose to enter **Monitor** mode, rather than deleting the policy completely.
 
-Select **flow-abc-3** and click **Actions > Manage Categories**.
-
-In the Set Categories text box on the left side of the UI, type intern and select **programs-abc:interns-abc** from autocomplete. Click Save.
-
-Select **flow-abc-4** and click **Actions > Manage Categories**.
-
-In the Set Categories text box on the left side of the UI, type sales and select **Actions > Manage Categories** programs-abc:sales-abc from autocomplete. Click Save.
-
-Confirm communication is NOT possible after applying the categories to the VMs
-------------------------------------------------------------------------------
-
-Open the VM console of **flow-abc-3** and **flow-abc-4**.
-
-Log into both VMs and ping from the **flow-abc-3** VM to the **flow-abc-4** VM.
-
-.. note::
-  The pings should NOT succeed because these two VMs now belong to the programs-abc:intern-abc and programs-abc:sales-abc categories and the policy isolate-interns-sales-abc, which was created earlier, isolates these two types of VMs.
+#. Return to the *Initials*\ **-WinClient-0** console and verify the Task Manager application is accessible again from the browser.
 
 Takeaways
 +++++++++
 
-- In this exercise you also created categories and an isolation security policy with ease without having to alter or change any networking configuration.
+- In this exercise you created categories and an isolation security policy with ease without having to alter or change any networking configuration.
 - After tagging the VMs with the categories created, the VMs simply behaved according to the policies they belong to.
+- The isolation policy is evaluated at a higher priority than the application security policy, and blocks traffic that would be allowed by the application security policy.

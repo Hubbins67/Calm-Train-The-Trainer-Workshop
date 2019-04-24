@@ -1,15 +1,15 @@
 .. _calm_win:
 
-------------------------------------
-Calm: Windows multi-tier Application
-------------------------------------
+-----------------------
+Calm: Windows Workloads
+-----------------------
 
 *The estimated time to complete this lab is 60 minutes.*
 
 Overview
 ++++++++
 
-**In this exercise you will explore the basics of working with Windows workloads in Nutanix Calm by building and deploying a blueprint that installs and configures a multi-tier** `bug tracker <http://bugnetproject.com/documentation/>`_ **web app using Microsoft SQL Server database & IIS webserver. This lab assumes you are familiar with basic Calm functionality
+**In this exercise you will explore the basics of working with Windows workloads in Nutanix Calm by building and deploying a blueprint that installs and configures a multi-tier** `bug tracker <http://bugnetproject.com/documentation/>`_ **web app using Microsoft SQL Server database & IIS webserver. This lab assumes you are familiar with basic Calm functionality or have completed the** :ref:`calm_linux` **lab.**
 
 Verifying the Default Project
 +++++++++++++++++++++++++++++
@@ -18,7 +18,7 @@ Verifying the Default Project
 
    .. figure:: images/project0.png
 
-#. Click **Projects** in the left hand toolbar and select the **default** project.
+#. Click |projects| **Projects** in the left hand toolbar and select the **default** project.
 
    .. note::
 
@@ -489,3 +489,6 @@ Takeaways
 - Calm provides the same application deployment and lifecycle management benefits for Windows workloads as it does for Linux workloads.
 
 - Calm can natively execute remote PowerShell scripts on Windows endpoints without the need for a Windows-based proxy.
+
+
+.. |projects| image:: images/projects.png
