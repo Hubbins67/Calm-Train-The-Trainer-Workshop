@@ -32,10 +32,6 @@ The Blueprint description contains key information including licensing, hardware
 
 .. figure:: images/510marketplace_p1_2.png
 
-#. Under **Projects Shared With**, select the **Calm** Project and click **Apply**.
-
-.. figure:: images/510marketplace_p1_3.png
-
 .. note::
 
   If the **Projects Shared With** drop down menu is unavailable, refresh your browser.

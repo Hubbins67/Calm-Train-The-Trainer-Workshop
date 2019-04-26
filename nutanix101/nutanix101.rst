@@ -138,7 +138,7 @@ Configuring Storage Containers
 
    - **Name** - *Initials*-container
    - Select **Advanced Settings**
-   - **Advertised Capacity** - 500 GiB
+   - **Advertised Capacity** - 2 TB
    - Select **Compression**
    - **Delay (In Minutes)** - 0
 
