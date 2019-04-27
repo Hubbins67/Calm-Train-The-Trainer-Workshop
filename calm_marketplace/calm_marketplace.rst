@@ -212,8 +212,6 @@ Launching Blueprint from the Marketplace
 
 #. Select the Blueprint published as part of this exercise and click **Launch**.
 
-.. figure:: images/510marketplace_p2_12.png
-
 #. Select the **Calm** Project and click **Launch**.
 
 .. figure:: images/510marketplace_p2_13.png

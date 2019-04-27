@@ -33,9 +33,9 @@
   calm_singlevm_blueprint/calm_singlevm_blueprint
   calm_mysql_blueprint/calm_mysql_blueprint
   calm_linux/calm_linux
-  calm_day2/calm_day2
   calm_windows_blueprint/calm_windows_blueprint
   calm_win/calm_win
+  calm_day2/calm_day2
 
 
 .. toctree::
