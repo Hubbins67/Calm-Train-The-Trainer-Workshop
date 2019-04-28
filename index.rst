@@ -47,7 +47,7 @@
   calm_escript/calm_escript
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 3
   :caption: Flow Labs
   :name: _flow_labs
   :hidden:
