@@ -45,7 +45,7 @@ This lab assumes basic familiarity with Nutanix Calm.
    - **Credential Name** - PC_Creds
    - **Username** - admin
    - **Secret Type** - Password
-   - **Password** - techX2019!
+   - **Password** - **Your Cluster Password**
 
    .. figure:: images/credentials.png
 

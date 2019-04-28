@@ -45,7 +45,7 @@
   :hidden:
 
   calm_escript/calm_escript
-  calm_wordpress_blueprint/calm_wordpress_blueprint
+<> calm_wordpress_blueprint/calm_wordpress_blueprint
 
 .. toctree::
   :maxdepth: 2
@@ -53,13 +53,16 @@
   :name: _flow_labs
   :hidden:
 
+
   what_is_flow/what_is_flow
-  flow_enable/flow_enable
-  flow_assign_categories_in_calm/flow_assign_categories_in_calm
-  flow_quarantine_vm/flow_quarantine_vm
-  flow_isolate_environments/flow_isolate_environments
-  flow_secure_app/flow_secure_app
-  flow_visualization/flow_visualization
+  taskman/taskman
+  nexthol-flow/index
+<> flow_enable/flow_enable
+<>  flow_assign_categories_in_calm/flow_assign_categories_in_calm
+<>  flow_quarantine_vm/flow_quarantine_vm
+<>  flow_isolate_environments/flow_isolate_environments
+<>  flow_secure_app/flow_secure_app
+<>  flow_visualization/flow_visualization
 
 
 .. toctree::
