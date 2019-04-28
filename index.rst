@@ -26,8 +26,8 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Main Calm Labs
-  :name: _main_calm_labs
+  :caption: Primary Calm Labs
+  :name: _primary_calm_labs
   :hidden:
 
   calm_singlevm_blueprint/calm_singlevm_blueprint
@@ -45,7 +45,6 @@
   :hidden:
 
   calm_escript/calm_escript
-<> calm_wordpress_blueprint/calm_wordpress_blueprint
 
 .. toctree::
   :maxdepth: 2
@@ -57,12 +56,6 @@
   what_is_flow/what_is_flow
   taskman/taskman
   nexthol-flow/index
-<> flow_enable/flow_enable
-<>  flow_assign_categories_in_calm/flow_assign_categories_in_calm
-<>  flow_quarantine_vm/flow_quarantine_vm
-<>  flow_isolate_environments/flow_isolate_environments
-<>  flow_secure_app/flow_secure_app
-<>  flow_visualization/flow_visualization
 
 
 .. toctree::
@@ -76,10 +69,10 @@
 .. _getting_started:
 
 -------------
-Calm Workshop
+Stefanini Workshop
 -------------
 
-Welcome to the Calm Workshop! This workbook accompanies an instructor-led session that introduces Nutanix Calm and many common management tasks. Each section has a lesson and an exercise to give you hands-on practice. The instructor explains the exercises and answers any additional questions that you may have.
+Welcome to the Stefanini Workshop! This workbook accompanies an instructor-led session that introduces Nutanix Calm and many common management tasks. Each section has a lesson and an exercise to give you hands-on practice. The instructor explains the exercises and answers any additional questions that you may have.
 
 At the end of the bootcamp, attendees should understand the basic concepts and technologies that make up Nutanix Calm and should be well prepared to install, design and operate Calm blueprints and applications.
 
