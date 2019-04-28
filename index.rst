@@ -56,6 +56,7 @@
   what_is_flow/what_is_flow
   taskman/taskman
   nexthol-flow/index
+  what_is_flow/what_is_flow
 
 
 .. toctree::
