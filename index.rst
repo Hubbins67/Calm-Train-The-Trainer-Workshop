@@ -69,10 +69,6 @@ What's New
 - Bootcamp updated for the following software versions:
     - AOS|Prism Central 5.10
 
-
-- Optional Labs:
-    - Flow
-
 Agenda
 ++++++
 
@@ -81,7 +77,6 @@ Agenda
 - Intro Nutanix Calm Labs
 - Main Calm Labs
 - Advanced Calm Labs
-- Flow Labs
 
 Introductions
 +++++++++++++
