@@ -1,4 +1,4 @@
-.. title:: Nutanix Calm and Flow Bootcamp
+.. title:: Nutanix Calm Bootcamp
 
 .. toctree::
   :maxdepth: 2
@@ -56,43 +56,38 @@
 .. _getting_started:
 
 -------------
-Calm Workshop
+Calm Train the Trainer Workshop
 -------------
 
-Welcome to the Calm Workshop! This workbook accompanies an instructor-led session that introduces Nutanix Calm and many common management tasks. Each section has a lesson and an exercise to give you hands-on practice. The instructor explains the exercises and answers any additional questions that you may have.
+Welcome to the Calm TTT Workshop! This workbook accompanies an instructor-led session that introduces Nutanix Calm and many common management tasks. Each section has a lesson and an exercise to give you hands-on practice. The instructor explains the exercises and answers any additional questions that you may have.
 
-At the end of the bootcamp, attendees should understand the basic concepts and technologies that make up Nutanix Calm and should be well prepared to install, design and operate Calm blueprints and applications.
+At the end of the bootcamp, attendees will be tested on their understanding of the basic concepts and technologies that make up Nutanix Calm and should be well prepared to deliver the content of this course.
 
-What's New
-++++++++++
-
-- Bootcamp updated for the following software versions:
-    - AOS|Prism Central 5.10
 
 Agenda
 ++++++
 
 - Introductions
 - Technology Overview
-- Intro Nutanix Calm Labs
-- Main Calm Labs
+- Introductory Calm Labs
+- Primary Calm Labs
 - Advanced Calm Labs
+- Student Certification Exam
 
 Introductions
 +++++++++++++
 
 - Name
 - Familiarity with Nutanix
-- Experiance with Calm
-- Experiance with DevOps technologies
-- Experiance with Flow
+- Experience with Calm
+- Experience with DevOps technologies
 
 Initial Setup
 +++++++++++++
 
 - Take note of the *Passwords* being used.
 .. note::
-  - If this workshop is being run on the local infrastrcture you will **not** use the connection information below. Your instructor will communicate this information directly to you.
+  - If this workshop is being run on the local infrastructure you will **not** use the connection information below. Your instructor will communicate this information directly to you.
   - If this workshop is being hosted on the Nutanix POC environment please see the connection information below.
 
 Nutanix Hosted Environment Details
