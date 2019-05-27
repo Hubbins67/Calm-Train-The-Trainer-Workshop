@@ -1,4 +1,4 @@
-.. title:: Nutanix Calm Bootcamp
+.. title:: Nutanix Calm
 
 .. toctree::
   :maxdepth: 2
@@ -61,7 +61,7 @@ Calm Train the Trainer Workshop
 
 Welcome to the Calm TTT Workshop! This workbook accompanies an instructor-led session that introduces Nutanix Calm and many common management tasks. Each section has a lesson and an exercise to give you hands-on practice. The instructor explains the exercises and answers any additional questions that you may have.
 
-At the end of the bootcamp, attendees will be tested on their understanding of the basic concepts and technologies that make up Nutanix Calm and should be well prepared to deliver the content of this course.
+At the end of the workshop, attendees will be tested on their understanding of the basic concepts and technologies that make up Nutanix Calm and should be well prepared to deliver the content of this course.
 
 
 Agenda
@@ -94,7 +94,7 @@ Nutanix Hosted Environment Details
 +++++++++++++++++++
 
 **Connection information here is only for classes that are hosted on the Nutanix POC environment.**
-Nutanix Bootcamps are intended to be run in the Nutanix Hosted POC environment. Your cluster will be provisioned with all necessary images, networks, and VMs required to complete the exercises.
+Nutanix s are intended to be run in the Nutanix Hosted POC environment. Your cluster will be provisioned with all necessary images, networks, and VMs required to complete the exercises.
 
 Networking
 ..........
@@ -117,7 +117,7 @@ For example:
 - **Subnet** - 10.21.55.0
 - **Cluster IP** - 10.21.55.37
 
-Throughout the Bootcamp there are multiple instances where you will need to substitute *XYZ* with the correct octet for your subnet, for example:
+Throughout the  there are multiple instances where you will need to substitute *XYZ* with the correct octet for your subnet, for example:
 
 .. list-table::
   :widths: 25 75
@@ -156,7 +156,7 @@ Credentials
 
 .. note::
 
-  The *<Cluster Password>* is unique to each cluster and will be provided by the leader of the Bootcamp.
+  The *<Cluster Password>* is unique to each cluster and will be provided by the leader of the .
 
 .. list-table::
   :widths: 25 35 40
